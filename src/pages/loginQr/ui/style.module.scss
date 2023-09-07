@@ -1,0 +1,59 @@
+.loginQR {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: var(--back);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loginQR__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 200px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 16px;
+
+    @media (max-width: $md4) {
+      font-size: 27px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 278px;
+    color: var(--translucent-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    @media (max-width: $md4) {
+      font-size: 17px;
+    }
+  }
+
+  &__link {
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-color);
+
+    @media (max-width: $md4) {
+      font-size: 20px;
+    }
+  }
+}

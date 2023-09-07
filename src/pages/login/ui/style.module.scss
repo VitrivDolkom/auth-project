@@ -1,0 +1,25 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background-color: var(--back);
+
+  &__content {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+
+    &_big {
+      width: 825px;
+      min-height: 532px;
+    }
+
+    &_small {
+      width: 500px;
+      min-height: 400px;
+    }
+  }
+}

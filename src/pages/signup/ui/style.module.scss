@@ -1,0 +1,9 @@
+.wrapper {
+  background-color: var(--back);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+}

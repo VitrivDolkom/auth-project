@@ -1,0 +1,46 @@
+.toastWrapper {
+  position: fixed;
+  z-index: 4;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  animation: show 1s ease-in;
+}
+
+.hidden {
+  animation: hide 1s ease-out;
+}
+
+.error {
+  background-color: red;
+}
+
+.success {
+  background-color: grin;
+}
+
+@keyframes show {
+  0% {
+    top: -100px;
+  }
+
+
+  100% {
+    top: 20px;
+  }
+}
+
+@keyframes hide {
+  0% {
+    top: 20px;
+  }
+
+
+  100% {
+    top: -100px;
+  }
+}

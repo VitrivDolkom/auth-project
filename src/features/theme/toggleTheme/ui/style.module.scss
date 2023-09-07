@@ -1,0 +1,23 @@
+.btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  & button {
+    width: 22px;
+
+    & img {
+      max-width: 100%;
+    }
+
+
+    @media (max-width: $md4) {
+      width: 19px;
+    }
+  }
+
+  @media (max-width: $md4) {
+    top: 16px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,63 @@
+.button {
+  background-image: var(--form-btn);
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 21px;
+  border-radius: 5px;
+
+  &__text {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $md2) {
+    @include linear-animation;
+
+    &:hover {
+      background-image: var(--form-btn-hover);
+    }
+
+    &:active {
+      background-image: var(--form-btn-active);
+    }
+  }
+
+  @media (max-width: $md3) {
+    height: 55px;
+  }
+
+  @media (max-width: $md4) {
+    height: 50px;
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
+
+.loader {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation .8s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

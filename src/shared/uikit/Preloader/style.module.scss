@@ -1,0 +1,11 @@
+.preloader {
+  width: 72px;
+
+  & img {
+    max-width: 100%;
+  }
+
+  @media (max-width: $md3) {
+    width: 52px;
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "plugins": ["capital-i-interface", "fsd-import", "react", "@typescript-eslint"],
+  "rules": {
+    // suppress errors for missing 'import React' in files
+    "react/react-in-jsx-scope": "off",
+    // error on nested ternary
+    "no-nested-ternary": "error",
+    // () => { return smth } -> () => smth
+    "arrow-body-style": ["warn", "as-needed"],
+    // warn console, debugger
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-inline-comments": "warn",
+    // warn extra spaces
+    "no-trailing-spaces": "warn",
+    // configure quotes
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
+    // use const instead of let if its possible
+    "prefer-const": "error",
+    // spaces per tab
+    "indent": ["warn", 2],
+    // configure semi
+    "semi": "error",
+    // max length per line
+    "max-len": ["warn", 120],
+    // extra comma in object
+    "comma-dangle": ["error", "never"],
+    // round brackets with one function param
+    "arrow-parens": ["error", "always"],
+    // error on duplicate import
+    "no-duplicate-imports": "error",
+    "import/no-internal-modules": ["off"],
+    // off import errors
+    "boundaries/element-types": ["off"],
+    // FSD architecture import plugin
+    "fsd-import/fsd-relative-path": ["error", { "alias": "@" }],
+    "fsd-import/public-api-imports": ["error", { "alias": "@" }],
+    "fsd-import/layer-imports": ["error", { "alias": "@" }],
+    // custom rules
+    "capital-i-interface/capital-i-interface": "error"
+  }
+}

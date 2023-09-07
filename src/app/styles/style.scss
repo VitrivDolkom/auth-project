@@ -1,0 +1,14 @@
+@import './zero';
+@import './fonts';
+@import './app';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $fz;
+  font-weight: $fw;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,11 @@
+.link {
+  color: var(--text-color);
+
+  @media (min-width: $md2) {
+    @include linear-animation;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

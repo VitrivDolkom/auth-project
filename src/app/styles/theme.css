@@ -1,0 +1,35 @@
+body {
+  --text-color: #1c93e3;
+  --translucent-text-color: #8c8c8c;
+  --input-text: #384048;
+  --back: #fff;
+  --grey-light: #5e6368;
+  --border: #6b737a;
+  --border-blue: #1a73e8;
+  --text: #000;
+  --form-btn: linear-gradient(180deg, #1c93e3 0%, #00a8ff 100%);
+  --form-btn-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(180deg, #1c93e3 0%, #00a8ff 100%);
+  --form-btn-active: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(180deg, #1c93e3 0%, #00a8ff 100%);
+
+  --border-red: #ff4c4c;
+  --error-text: #E00000;
+  --blue-text: #1C93E3;
+}
+
+body.dark {
+  --text-color: #84cafe;
+  --translucent-text-color: #c9ccd3;
+  --input-text: #fff;
+  --border: #c9ccd3;
+  --border-blue: #84cafe;
+  --text: #e9ecf3;
+
+  --back: #333;
+  --grey-light: #C9CCD3;
+
+  --border-red: #CE494A;
+  --error-text: #CE494A;
+  --blue-text: #84CAFE;
+}

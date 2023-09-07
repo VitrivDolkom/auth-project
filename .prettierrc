@@ -1,0 +1,19 @@
+{
+  "semi": true,
+  "printWidth": 120,
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "none",
+  "importOrder": [
+    "^@core/(.*)$",
+    "^@/(shared|features|entities|app|widgets|pages)/(.*)$",
+    "^@server/(.*)$",
+    "^\\.(?!.*\\.(scss|css|png|jpg|svg)$).*",
+    "(\\.\\.?/(\\w/?)+(\\.module)?.(scss|css)|\\..*(png|svg|jpg))"
+  ],
+  "importOrderCaseInsensitive": true,
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

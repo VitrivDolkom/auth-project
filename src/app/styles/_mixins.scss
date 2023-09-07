@@ -1,0 +1,25 @@
+.formInput {
+  padding-right: 30px;
+
+  &:focus {
+    box-shadow: 0 0 3px 1.5px var(--form-input-focus);
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+@mixin linear-animation {
+  transition: all .3s linear;
+}
+
+@mixin default-animation {
+  transition: all .4s ease-in-out;
+}
+
+section {
+  @include default-animation;
+}

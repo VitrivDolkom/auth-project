@@ -1,0 +1,18 @@
+.message {
+  color: var(--blue-text);
+  font-size: 14px;
+
+  @media (max-width: $md3) {
+    font-size: 13px;
+  }
+}
+
+.error {
+  color: var(--error-text);
+}
+
+.success {}
+
+.pending {
+  color: var(--text-color);
+}
